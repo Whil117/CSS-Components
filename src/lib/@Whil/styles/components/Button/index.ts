@@ -21,7 +21,7 @@ export const Button = styled.button<ButtonProps>`
           border-radius: ${props?.style?.borderRadius || '5px'};
           border: ${props?.style?.border || 'none'};
           background: ${props?.style?.background || colors[props.type]};
-          box-shadow: 0px 0px 4px
+          box-shadow: 0px 0px 2px
             ${props.type === 'default'
               ? 'rgba(0, 0, 0, 0.25)'
               : colors[props.type || '#fff']};

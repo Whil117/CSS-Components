@@ -5,6 +5,6 @@ interface ImageProps {
   alt: string
   width: number
   height: number
-  style?: Styles
+  styles?: Styles
 }
 export default ImageProps

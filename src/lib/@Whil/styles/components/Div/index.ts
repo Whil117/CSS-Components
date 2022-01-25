@@ -7,7 +7,7 @@ export const DivWrapper = styled.div<{ styles?: Styles }>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25)
     ${({ styles }) =>
       styles
         ? css`
@@ -28,7 +28,7 @@ export const DivWrapper = styled.div<{ styles?: Styles }>`
             object-fit: ${styles.objectfit || 'cover'};
             margin: ${styles.margin || '0'};
             box-shadow: ${styles.boxshadow ||
-            '0px 0px 4px rgba(0, 0, 0, 0.25)'};
+            '0px 0px 2px rgba(0, 0, 0, 0.25)'};
           `
         : ''};
 `

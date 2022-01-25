@@ -6,13 +6,13 @@ import Image from 'next/image'
 const ImageWrapper = styled(Image)<ImageProps>`
   border-radius: 10px;
   object-fit: cover
-    ${({ style }) =>
-      style
+    ${({ styles }) =>
+      styles
         ? css`
-            margin: ${style.margin || '10px'};
-            background: ${style.background || '#ffffff'};
-            object-fit: ${style.objectfit || 'cover'};
-            border-radius: ${style.borderRadius || '5px'};
+            margin: ${styles.margin || '10px'};
+            background: ${styles.background || '#ffffff'};
+            object-fit: ${styles.objectfit || 'cover'};
+            border-radius: ${styles.borderRadius || '5px'};
           `
         : ''};
 `
